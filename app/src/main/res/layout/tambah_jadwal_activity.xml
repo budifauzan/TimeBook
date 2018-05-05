@@ -90,6 +90,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/editNamaKegiatan"
+                        android:layout_marginTop="2dp"
                         android:src="@drawable/underbar" />
                 </RelativeLayout>
 
@@ -112,15 +113,33 @@
 
                 </ImageView>
 
-                <TextView
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:text="Pilih hari dan jam"
-                    android:textColor="@android:color/black"
-                    android:textSize="18sp">
+                    android:paddingRight="4dp">
 
-                </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Pilih hari"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:text="Jam"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp">
+
+                    </TextView>
+                </RelativeLayout>
+
 
             </LinearLayout>
 
@@ -157,6 +176,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/editLokasiKegiatan"
+                        android:layout_marginTop="2dp"
                         android:src="@drawable/underbar" />
                 </RelativeLayout>
 
