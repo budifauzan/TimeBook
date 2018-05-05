@@ -55,6 +55,7 @@ public class TimelineActivity extends AppCompatActivity implements View.OnClickL
         for (int i = 0; i < button.length; i++) {
             button[i].setOnClickListener(this);
         }
+
     }
 
     //Mengambil semua data

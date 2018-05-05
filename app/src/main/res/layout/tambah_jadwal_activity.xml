@@ -49,7 +49,8 @@
                     android:gravity="center_vertical"
                     android:text="Pribadi"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp">
+                    android:textSize="18sp"
+                    android:id="@+id/editPribadi">
 
                 </TextView>
 

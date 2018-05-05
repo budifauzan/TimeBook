@@ -19,16 +19,17 @@
         <activity
             android:name=".TambahJadwalActivity"
             android:label="Tambah Jadwal">
-
-        </activity>
-        <activity
-            android:name=".TimelineActivity"
-            android:label="Timeline">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".TimelineActivity"
+            android:label="Timeline">
+
         </activity>
     </application>
 
