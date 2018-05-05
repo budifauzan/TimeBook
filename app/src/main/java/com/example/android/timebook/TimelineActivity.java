@@ -10,46 +10,79 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TimelineActivity extends AppCompatActivity {
-    private List<Timeline> timelineList = new ArrayList<>();
+    private List<Timeline> timelineListToday = new ArrayList<>();
+    private List<Timeline> timelineListTomorrow = new ArrayList<>();
+    private List<Timeline> timelineListAfterTomorrow = new ArrayList<>();
     private RecyclerView recyclerViewToday, recyclerViewTomorrow, recyclerViewAfterTomorrow;
-    private TimelineAdapter mAdapter;
+    private TimelineAdapter mAdapterToday, mAdapterTomorrow, mAdapterAfterTomorrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.timeline_activity);
+        //Recycler untuk timeline hari ini
         recyclerViewToday = findViewById(R.id.recycler_view_today);
-        recyclerViewTomorrow = findViewById(R.id.recycler_view_tomorrow);
-        recyclerViewAfterTomorrow = findViewById(R.id.recycler_view_after_tomorrow);
-        mAdapter = new TimelineAdapter(timelineList);
-        RecyclerView.LayoutManager mLayoutManager1 = new LinearLayoutManager(getApplicationContext());
-        RecyclerView.LayoutManager mLayoutManager2 = new LinearLayoutManager(getApplicationContext());
-        RecyclerView.LayoutManager mLayoutManager3 = new LinearLayoutManager(getApplicationContext());
-        recyclerViewToday.setLayoutManager(mLayoutManager1);
+        mAdapterToday = new TimelineAdapter(timelineListToday);
+        RecyclerView.LayoutManager mLayoutManagerToday = new LinearLayoutManager(getApplicationContext());
+        recyclerViewToday.setLayoutManager(mLayoutManagerToday);
         recyclerViewToday.setItemAnimator(new DefaultItemAnimator());
-        recyclerViewToday.setAdapter(mAdapter);
-        recyclerViewTomorrow.setLayoutManager(mLayoutManager2);
+        recyclerViewToday.setAdapter(mAdapterToday);
+        //Recycler untuk timeline besok
+        recyclerViewTomorrow = findViewById(R.id.recycler_view_tomorrow);
+        mAdapterTomorrow = new TimelineAdapter(timelineListTomorrow);
+        RecyclerView.LayoutManager mLayoutManagerTomorrow = new LinearLayoutManager(getApplicationContext());
+        recyclerViewTomorrow.setLayoutManager(mLayoutManagerTomorrow);
         recyclerViewTomorrow.setItemAnimator(new DefaultItemAnimator());
-        recyclerViewTomorrow.setAdapter(mAdapter);
-        recyclerViewAfterTomorrow.setLayoutManager(mLayoutManager3);
+        recyclerViewTomorrow.setAdapter(mAdapterTomorrow);
+        //Recycler untuk timeline lusa
+        recyclerViewAfterTomorrow = findViewById(R.id.recycler_view_after_tomorrow);
+        mAdapterAfterTomorrow = new TimelineAdapter(timelineListAfterTomorrow);
+        RecyclerView.LayoutManager mLayoutManagerAfterTomorrow = new LinearLayoutManager(getApplicationContext());
+        recyclerViewAfterTomorrow.setLayoutManager(mLayoutManagerAfterTomorrow);
         recyclerViewAfterTomorrow.setItemAnimator(new DefaultItemAnimator());
-        recyclerViewAfterTomorrow.setAdapter(mAdapter);
+        recyclerViewAfterTomorrow.setAdapter(mAdapterAfterTomorrow);
         getTimelineData();
     }
+    public void getTimelineData(){
+        getTodayTimelineData();
+        getTomorrowTimelineData();
+        getAfterTomorrowTimelineData();
+    }
 
-    public void getTimelineData() {
+    public void getTodayTimelineData() {
         Timeline timeline = new Timeline("16:30", "Apel",
                 "Mbuud", "Filkom",
                 "Mbuud and Friends", true, true);
-        timelineList.add(timeline);
-        timeline = new Timeline("16:30", "Apel",
+        timelineListToday.add(timeline);
+        timeline = new Timeline("11:30", "PUBG",
                 "Mbuud", "Filkom",
                 "Mbuud and Friends", true, true);
-        timelineList.add(timeline);
-        timeline = new Timeline("16:30", "Apel",
+        timelineListToday.add(timeline);
+        mAdapterToday.notifyDataSetChanged();
+
+    }
+
+    public void getTomorrowTimelineData() {
+        Timeline timeline = new Timeline("15:30", "Futsal",
                 "Mbuud", "Filkom",
                 "Mbuud and Friends", true, true);
-        timelineList.add(timeline);
-        mAdapter.notifyDataSetChanged();
+        timelineListTomorrow.add(timeline);
+        timeline = new Timeline("12:30", "Lari",
+                "Mbuud", "Filkom",
+                "Mbuud and Friends", true, true);
+        timelineListTomorrow.add(timeline);
+        mAdapterTomorrow.notifyDataSetChanged();
+    }
+
+    public void getAfterTomorrowTimelineData() {
+        Timeline timeline = new Timeline("09:30", "Renang",
+                "Mbuud", "Filkom",
+                "Mbuud and Friends", true, true);
+        timelineListAfterTomorrow.add(timeline);
+        timeline = new Timeline("13:30", "Dota",
+                "Mbuud", "Filkom",
+                "Mbuud and Friends", true, true);
+        timelineListAfterTomorrow.add(timeline);
+        mAdapterAfterTomorrow.notifyDataSetChanged();
     }
 }
