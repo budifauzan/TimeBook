@@ -16,8 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TambahJadwalActivity"
-            android:label="Tambah Jadwal"></activity>
+        <activity
+            android:name=".TambahJadwalActivity"
+            android:label="Tambah Jadwal">
+
+        </activity>
+
     </application>
+
 
 </manifest>
