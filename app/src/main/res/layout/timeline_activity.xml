@@ -100,20 +100,27 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:paddingTop="4dp"
-        android:background="#ffb300">
+        android:background="#ffb300"
+        android:paddingTop="4dp">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
             android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:src="@drawable/timeline_menu"/>
+                android:src="@drawable/timeline_menu" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -129,14 +136,14 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:src="@drawable/calendar_menu"/>
+                android:src="@drawable/calendar_menu" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -152,14 +159,14 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:src="@drawable/profile_menu"/>
+                android:src="@drawable/profile_menu" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -169,6 +176,13 @@
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
         </LinearLayout>
     </LinearLayout>
