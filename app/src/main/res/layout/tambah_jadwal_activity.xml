@@ -20,13 +20,12 @@
 
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="16dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_weight="8"
+            android:layout_marginTop="16dp"
+            android:layout_weight="6"
             android:background="#fff7a7"
-            android:orientation="vertical"
-            android:padding="8dp">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -64,7 +63,7 @@
                 </ImageView>
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="text"
                     android:text="Masukkan Nama Kegiatan"
@@ -107,7 +106,7 @@
                 </ImageView>
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="text"
                     android:text="Tambahkan Lokasi" />
@@ -156,7 +155,7 @@
                     android:text="Ulangi"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -177,6 +176,10 @@
                 android:text="simpan" />
 
         </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
 
 
     </LinearLayout>
@@ -204,7 +207,7 @@
                 android:layout_weight="1"
                 android:text="Timeline"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="16dp" />
 
         </LinearLayout>
@@ -226,7 +229,7 @@
                 android:layout_weight="1"
                 android:text="Calendar"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="16dp" />
 
         </LinearLayout>
@@ -248,7 +251,7 @@
                 android:layout_weight="1"
                 android:text="Profile"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="16dp" />
 
         </LinearLayout>

@@ -18,11 +18,10 @@
         </activity>
         <activity
             android:name=".TambahJadwalActivity"
-            android:label="Tambah Jadwal">
-
-        </activity>
-
+            android:label="Tambah Jadwal"></activity>
+        <activity
+            android:name=".TimelineActivity"
+            android:label="Timeline"></activity>
     </application>
-
 
 </manifest>

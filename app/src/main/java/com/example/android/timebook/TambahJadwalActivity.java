@@ -8,6 +8,6 @@ public class TambahJadwalActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tambah_jadwal);
+        setContentView(R.layout.tambah_jadwal_activity);
     }
 }
