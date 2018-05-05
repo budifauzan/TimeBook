@@ -22,7 +22,6 @@
         <activity
             android:name=".TimelineActivity"
             android:label="Timeline"></activity>
-
     </application>
 
 </manifest>
