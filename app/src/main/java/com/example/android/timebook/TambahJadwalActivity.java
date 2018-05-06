@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -83,11 +84,11 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
 
     // The method that displays the popup.
     private void showPopup(final Activity context, Point p) {
-        int popupWidth = 300;
-        int popupHeight = 400;
+        int popupWidth = 400;
+        int popupHeight = 600;
 
         // Inflate the popup_layout.xml
-        LinearLayout viewGroup = (LinearLayout) context.findViewById(R.id.ulangPopUp);
+        RelativeLayout viewGroup = context.findViewById(R.id.ulangPopUp);
         LayoutInflater layoutInflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = layoutInflater.inflate(R.layout.ulangi_pop_up, viewGroup);
@@ -100,8 +101,8 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
         popup.setFocusable(true);
 
         // Some offset to align the popup a bit to the right, and a bit down, relative to button's position.
-        int OFFSET_X = 30;
-        int OFFSET_Y = 30;
+//        int OFFSET_X = 30;
+//        int OFFSET_Y = 30;
 
         // Clear the default translucent background
         popup.setBackgroundDrawable(new BitmapDrawable());
@@ -110,7 +111,22 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
         popup.showAtLocation(layout, Gravity.CENTER, 0,0);
 
         // Getting a reference to Close button, and close the popup when clicked.
-        
+        Button cancel = layout.findViewById(R.id.okUlangi);
+        Button ok = layout.findViewById(R.id.cancelUlangi);
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popup.dismiss();
+            }
+        });
+        ok.setOnClickListener(this);
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popup.dismiss();
+            }
+        });
+
     }
 
 }

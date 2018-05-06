@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/ulangPopUp"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:padding="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,12 +60,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
+            android:id="@+id/cancelUlangi"
             android:text="Cancel" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#ffb300"
+            android:id="@+id/okUlangi"
             android:text="OK" />
 
     </LinearLayout>
