@@ -38,8 +38,8 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
             button[i].setOnClickListener(this);
         }
         //Popup Window
-        TextView button = findViewById(R.id.editPribadi);
-        button.setOnClickListener(new View.OnClickListener() {
+        TextView editUlangi = findViewById(R.id.editUlangi);
+        editUlangi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (p != null)
@@ -69,11 +69,11 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
     public void onWindowFocusChanged(boolean hasFocus) {
 
         int[] location = new int[2];
-        TextView button = findViewById(R.id.editPribadi);
+        TextView editUlangi = findViewById(R.id.editUlangi);
 
         // Get the x, y location and store it in the location[] array
         // location[0] = x, location[1] = y.
-        button.getLocationOnScreen(location);
+        editUlangi.getLocationOnScreen(location);
 
         //Initialize the Point with x, and y positions
         p = new Point();
@@ -83,8 +83,8 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
 
     // The method that displays the popup.
     private void showPopup(final Activity context, Point p) {
-        int popupWidth = 200;
-        int popupHeight = 300;
+        int popupWidth = 300;
+        int popupHeight = 400;
 
         // Inflate the popup_layout.xml
         LinearLayout viewGroup = (LinearLayout) context.findViewById(R.id.ulangPopUp);
@@ -107,10 +107,10 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
         popup.setBackgroundDrawable(new BitmapDrawable());
 
         // Displaying the popup at the specified location, + offsets.
-        popup.showAtLocation(layout, Gravity.NO_GRAVITY, p.x + OFFSET_X, p.y + OFFSET_Y);
+        popup.showAtLocation(layout, Gravity.CENTER, 0,0);
 
         // Getting a reference to Close button, and close the popup when clicked.
-
+        
     }
 
 }
