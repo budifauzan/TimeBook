@@ -12,10 +12,7 @@
     <list default="true" id="fe1a82af-1b40-45a2-aed0-b7c25e97102c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/timebook/TambahJadwalActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/timebook/TambahJadwalActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/timebook/TimelineActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/timebook/TimelineActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/pemberitahuan_pop_up.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pemberitahuan_pop_up.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/pribadi_pop_up.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pribadi_pop_up.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tambah_jadwal_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tambah_jadwal_activity.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/ulangi_pop_up.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/ulangi_pop_up.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,18 +63,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TambahJadwalActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TambahJadwalActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/timebook/TambahJadwalActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="444">
+              <caret line="154" column="1" lean-forward="false" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
               <folding>
-                <element signature="e#2050#2261#0" expanded="true" />
-                <element signature="e#2260#2261#0" expanded="true" />
-                <element signature="e#4740#4889#0" expanded="true" />
-                <element signature="e#4888#4889#0" expanded="true" />
-                <element signature="e#4963#5112#0" expanded="true" />
-                <element signature="e#5111#5112#0" expanded="true" />
+                <element signature="e#5711#5860#0" expanded="true" />
+                <element signature="e#5859#5860#0" expanded="true" />
+                <element signature="e#5906#6055#0" expanded="true" />
+                <element signature="e#6054#6055#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,8 +106,8 @@
       <file leaf-file-name="ulangi_pop_up.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ulangi_pop_up.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+            <state relative-caret-position="270">
+              <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -121,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pribadi_pop_up.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pribadi_pop_up.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pribadi_pop_up.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="323">
+              <caret line="83" column="25" lean-forward="false" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -1894,10 +1889,10 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/timebook/TimelineActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/pemberitahuan_pop_up.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/ulangi_pop_up.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/pribadi_pop_up.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/tambah_jadwal_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/ulangi_pop_up.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/timebook/TambahJadwalActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/pribadi_pop_up.xml" />
       </list>
     </option>
   </component>
@@ -2140,7 +2135,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525576065622" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525579102980" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2188,7 +2183,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525576065622" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525579102980" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2371,7 +2366,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525576065625" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1525579102984" />
       </method>
     </configuration>
     <list size="1">
@@ -2414,7 +2409,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -2430,7 +2424,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23827533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23827533" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2574,12 +2568,10 @@
         <state relative-caret-position="153">
           <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
           <folding>
-            <element signature="e#2050#2261#0" expanded="true" />
-            <element signature="e#2260#2261#0" expanded="true" />
-            <element signature="e#4740#4889#0" expanded="true" />
-            <element signature="e#4888#4889#0" expanded="true" />
-            <element signature="e#4963#5112#0" expanded="true" />
-            <element signature="e#5111#5112#0" expanded="true" />
+            <element signature="e#5711#5860#0" expanded="true" />
+            <element signature="e#5859#5860#0" expanded="true" />
+            <element signature="e#5906#6055#0" expanded="true" />
+            <element signature="e#6054#6055#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2860,28 +2852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ulangi_pop_up.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pribadi_pop_up.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tambah_jadwal_activity.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -2895,17 +2865,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/timebook/TambahJadwalActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+        <state relative-caret-position="444">
+          <caret line="154" column="1" lean-forward="false" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
           <folding>
-            <element signature="e#2050#2261#0" expanded="true" />
-            <element signature="e#2260#2261#0" expanded="true" />
-            <element signature="e#4740#4889#0" expanded="true" />
-            <element signature="e#4888#4889#0" expanded="true" />
-            <element signature="e#4963#5112#0" expanded="true" />
-            <element signature="e#5111#5112#0" expanded="true" />
+            <element signature="e#5711#5860#0" expanded="true" />
+            <element signature="e#5859#5860#0" expanded="true" />
+            <element signature="e#5906#6055#0" expanded="true" />
+            <element signature="e#6054#6055#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ulangi_pop_up.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pribadi_pop_up.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="83" column="25" lean-forward="false" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>

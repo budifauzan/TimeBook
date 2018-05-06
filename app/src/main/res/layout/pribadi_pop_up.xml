@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pribadiPopUp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/pribadiPopUp"
     android:background="@android:color/white"
     android:padding="8dp">
 
@@ -11,8 +11,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pilih salah satu"
             android:textColor="@android:color/black"
@@ -22,58 +23,73 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Publik"
-                android:textColor="@android:color/black" />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
-            <RadioButton
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent">
 
-            <ImageView
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Teman Pilihan"
-                android:textColor="@android:color/black" />
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Publik"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Teman Pilihan"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="Pribadi"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pribadi"
-                android:textColor="@android:color/black" />
         </LinearLayout>
 
     </LinearLayout>

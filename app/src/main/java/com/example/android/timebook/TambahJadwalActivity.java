@@ -7,6 +7,7 @@ import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Layout;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,10 +22,10 @@ import android.widget.Toast;
 public class TambahJadwalActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText editText[] = new EditText[2];
     private LinearLayout mainButton[] = new LinearLayout[3];
+    private TextView popUpButton[] = new TextView[3];
     private Button okButton[] = new Button[3];
     private Button cancelButton[] = new Button[3];
     private RelativeLayout popUpLayout[] = new RelativeLayout[3];
-    private TextView popUpButton[] = new TextView[3];
     private Point p;
 
     @Override
@@ -44,16 +45,8 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
         }
         for (int i = 0; i < mainButton.length; i++) {
             mainButton[i].setOnClickListener(this);
+            popUpButton[i].setOnClickListener(this);
         }
-        //Popup Window
-        TextView editUlangi = findViewById(R.id.editUlangi);
-        editUlangi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (p != null)
-                    showPopup(TambahJadwalActivity.this, p);
-            }
-        });
 
     }
 
@@ -67,11 +60,18 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
         } else if (v.getId() == mainButton[0].getId()) {
             Intent myIntent = new Intent(TambahJadwalActivity.this, TimelineActivity.class);
             TambahJadwalActivity.this.startActivity(myIntent);
+        } else if (v.getId() == popUpButton[0].getId()) {
+            showPopup(TambahJadwalActivity.this, p, 0);
+        } else if (v.getId() == popUpButton[1].getId()) {
+            showPopup(TambahJadwalActivity.this, p, 1);
+        } else if (v.getId() == popUpButton[2].getId()) {
+            showPopup(TambahJadwalActivity.this, p, 2);
         } else {
             Toast.makeText(getApplicationContext(), "Belum ada activitynya mamang",
                     Toast.LENGTH_SHORT).show();
         }
     }
+
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
@@ -90,15 +90,30 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
     }
 
     // The method that displays the popup.
-    private void showPopup(final Activity context, Point p) {
+    private void showPopup(final Activity context, Point p, int i) {
+        popUpLayout[0] = context.findViewById(R.id.pribadiPopUp);
+        popUpLayout[1] = context.findViewById(R.id.pemberitahuanPopUp);
+        popUpLayout[2] = context.findViewById(R.id.ulangiPopUp);
         int popupWidth = 400;
         int popupHeight = 600;
 
+
         // Inflate the popup_layout.xml
-        RelativeLayout viewGroup = context.findViewById(R.id.ulangPopUp);
+        RelativeLayout viewGroup = popUpLayout[i];
         LayoutInflater layoutInflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View layout = layoutInflater.inflate(R.layout.ulangi_pop_up, viewGroup);
+        View layout = layoutInflater.inflate(R.layout.pribadi_pop_up, viewGroup);
+        switch (i) {
+            case 0:
+                layout = layoutInflater.inflate(R.layout.pribadi_pop_up, viewGroup);
+                break;
+            case 1:
+                layout = layoutInflater.inflate(R.layout.pemberitahuan_pop_up, viewGroup);
+                break;
+            case 2:
+                layout = layoutInflater.inflate(R.layout.ulangi_pop_up, viewGroup);
+                break;
+        }
 
         // Creating the PopupWindow
         final PopupWindow popup = new PopupWindow(context);
@@ -115,25 +130,26 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
         popup.setBackgroundDrawable(new BitmapDrawable());
 
         // Displaying the popup at the specified location, + offsets.
-        popup.showAtLocation(layout, Gravity.CENTER, 0,0);
+        popup.showAtLocation(layout, Gravity.CENTER, 0, 0);
 
         // Getting a reference to Close button, and close the popup when clicked.
-        Button cancel = layout.findViewById(R.id.okUlangi);
-        Button ok = layout.findViewById(R.id.cancelUlangi);
-        cancel.setOnClickListener(new View.OnClickListener() {
+        okButton[0] = layout.findViewById(R.id.okPribadi);
+        okButton[1] = layout.findViewById(R.id.okPemberitahuan);
+        okButton[2] = layout.findViewById(R.id.okUlangi);
+        cancelButton[0] = layout.findViewById(R.id.cancelPribadi);
+        cancelButton[1] = layout.findViewById(R.id.cancelPemberitahuan);
+        cancelButton[2] = layout.findViewById(R.id.cancelUlangi);
+        okButton[i].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 popup.dismiss();
             }
         });
-        ok.setOnClickListener(this);
-        cancel.setOnClickListener(new View.OnClickListener() {
+        cancelButton[i].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 popup.dismiss();
             }
         });
-
     }
-
 }
