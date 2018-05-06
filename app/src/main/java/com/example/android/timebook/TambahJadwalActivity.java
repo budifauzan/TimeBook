@@ -20,7 +20,11 @@ import android.widget.Toast;
 
 public class TambahJadwalActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText editText[] = new EditText[2];
-    private LinearLayout button[] = new LinearLayout[3];
+    private LinearLayout mainButton[] = new LinearLayout[3];
+    private Button okButton[] = new Button[3];
+    private Button cancelButton[] = new Button[3];
+    private RelativeLayout popUpLayout[] = new RelativeLayout[3];
+    private TextView popUpButton[] = new TextView[3];
     private Point p;
 
     @Override
@@ -29,14 +33,17 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
         setContentView(R.layout.tambah_jadwal_activity);
         editText[0] = findViewById(R.id.editNamaKegiatan);
         editText[1] = findViewById(R.id.editLokasiKegiatan);
-        button[0] = findViewById(R.id.timelineButton);
-        button[1] = findViewById(R.id.profileButton);
-        button[2] = findViewById(R.id.calendarButton);
+        mainButton[0] = findViewById(R.id.timelineButton);
+        mainButton[1] = findViewById(R.id.profileButton);
+        mainButton[2] = findViewById(R.id.calendarButton);
+        popUpButton[0] = findViewById(R.id.editPribadi);
+        popUpButton[1] = findViewById(R.id.editPemberitahuan);
+        popUpButton[2] = findViewById(R.id.editUlangi);
         for (int i = 0; i < editText.length; i++) {
             editText[i].setOnClickListener(this);
         }
-        for (int i = 0; i < button.length; i++) {
-            button[i].setOnClickListener(this);
+        for (int i = 0; i < mainButton.length; i++) {
+            mainButton[i].setOnClickListener(this);
         }
         //Popup Window
         TextView editUlangi = findViewById(R.id.editUlangi);
@@ -57,7 +64,7 @@ public class TambahJadwalActivity extends AppCompatActivity implements View.OnCl
             editText[0].setText("");
         } else if (v.getId() == editText[1].getId()) {
             editText[1].setText("");
-        } else if (v.getId() == button[0].getId()) {
+        } else if (v.getId() == mainButton[0].getId()) {
             Intent myIntent = new Intent(TambahJadwalActivity.this, TimelineActivity.class);
             TambahJadwalActivity.this.startActivity(myIntent);
         } else {

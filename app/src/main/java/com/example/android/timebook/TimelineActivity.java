@@ -107,8 +107,7 @@ public class TimelineActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-
-        if (v.getId() == button[1].getId() || v.getId() == button[1].getId()) {
+        if (v.getId() == button[1].getId() || v.getId() == button[2].getId()) {
             Toast.makeText(getApplicationContext(), "Belum ada activitynya mamang",
                     Toast.LENGTH_SHORT).show();
         }
