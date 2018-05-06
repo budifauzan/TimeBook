@@ -10,8 +10,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent myIntent = new Intent(MainActivity.this, TimelineActivity.class);
+        Intent myIntent = new Intent(MainActivity.this, TambahJadwalActivity.class);
         MainActivity.this.startActivity(myIntent);
+
     }
 
 }
